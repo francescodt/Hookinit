@@ -1,6 +1,13 @@
 import React from 'react';
-import logo from './logo.svg';
+import { Switch, Route } from 'react-router-dom'; 
 import './App.css';
+
+import Header from './components/header';
+import ToDoList from './components/toDoList';
+import ToDoBoard from './components/toDoBoard';
+import ToDoForm from './components/toDoForm';
+import Footer from './components/footer';
+
 
 function App() {
   return (
@@ -9,6 +16,11 @@ function App() {
     <Main>
     <ToDoList />
     <ToDoForm />
+    <Switch>
+      <Route path='/board'>
+      <ToDoBoard />
+      </Route>
+    </Switch>
     </Main>
     <Footer />
     </>
