@@ -6,7 +6,10 @@ function App() {
   return (
     <>
     <Header />
-    <Main />
+    <Main>
+    <ToDoList />
+    <ToDoForm />
+    </Main>
     <Footer />
     </>
   );
